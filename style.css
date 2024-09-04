@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+::selection {
+    background-color: teal;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    backdrop-filter: blur(5px);
+    background-color: #00000020;
+}
+
+.currency-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 50px 10px;
+}
+
+.fromcont {
+    padding: 30px 30px 30px 10px;
+}
+
+.tocont {
+    padding: 30px 10px 30px 30px;
+}
+
+.select-box {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-img {
+    min-width: 48px;
+    width: 48px;
+    height: 32px;
+    height: 32px;
+    border-radius: 6px;
+}
+
+select {
+    padding: 4px;
+    height: 32px;
+    max-width: 200px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+
+input {
+    padding: 4px;
+    height: 32px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid #333;
+    font-size: 14px;
+}
+
+#amount,
+p {
+    font-size: 128px;
+    width: 450px;
+    font-weight: 100;
+    overflow: scroll;
+    color: #000;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    padding-top: 30px;
+    height: unset;
+}
+
+p::-webkit-scrollbar {
+    display: none;
+}
+
+#amount {
+    text-align: start;
+}
+
+#result {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: end;
+    user-select: text;
+}
+
+#amount::placeholder {
+    font-size: 64px;
+}
+
+.amount-box {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 80px;
+}
+
+.amount-box input {
+    border: none;
+    outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#swapButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: auto;
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.sec-cont {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sec-cont {
+        scale: .9;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .sec-cont {
+        scale: .8;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sec-cont {
+        scale: .7;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sec-cont {
+        scale: .62;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .sec-cont {
+        scale: .58;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .sec-cont {
+        scale: .52;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .select-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #swapButton {
+        border: none;
+        height: auto;
+        border-radius: unset;
+        width: 50%;
+    }
+
+    .fromcont {
+        padding: 20px;
+    }
+
+    .tocont {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+    }
+
+    #amount,
+    p {
+        font-size: 64px;
+        width: 100%;
+        font-weight: 100;
+        overflow: scroll;
+        color: #000;
+        display: flex;
+        border-radius: 15px;
+        padding: 15px;
+        padding-top: 30px;
+        height: unset;
+    }
+
+    #amount::placeholder {
+        font-size: 28px;
+    }
+}

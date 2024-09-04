@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Created by TheFeerid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/brands.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sec-cont">
+            <div class="select-box">
+                <div class="fromcont currency-container">
+                    <input type="text" id="searchbarFrom" placeholder="Search from currency" autocomplete="off">
+                    <select id="fromCurrency"></select>
+                    <img class="flag-img" id="fromFlag" src="https://flagcdn.com/w80/az.png" alt="From Flag" />
+                </div>
+
+                <button id="swapButton"><i class="fa-light fa-arrow-right-arrow-left"></i></button>
+
+                <div class="tocont currency-container">
+                    <img class="flag-img" id="toFlag" src="https://flagcdn.com/w80/us.png" alt="To Flag" />
+                    <select id="toCurrency"></select>
+                    <input type="text" id="searchbarTo" placeholder="Search to currency" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="amount-box">
+                <input type="number" id="amount" placeholder="Enter amount" value="100" autocomplete="off" autofocus />
+                <p id="result">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
